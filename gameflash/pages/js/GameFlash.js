@@ -6,7 +6,7 @@ async function getRiddle() {
     const options = {
       method: 'GET',
       headers: {
-        'X-RapidAPI-Key': '25a8461657msh3bbed42dcafaca3p1f72b5jsnde30eca3c631',
+        'X-RapidAPI-Key': '',
         'X-RapidAPI-Host': 'riddles1.p.rapidapi.com',
       },
     };
