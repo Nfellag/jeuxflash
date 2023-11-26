@@ -17,7 +17,6 @@ if (isset($_POST['SingUp'])) {
         echo "Inscription réussie. Vous pouvez maintenant vous connecter.";
     } else {
         echo "L'inscription a échoué. Veuillez réessayer.";
-        // Ajoutez plus de détails sur l'erreur si nécessaire : var_dump($requete->errorInfo());
     }
 }
 ?>
