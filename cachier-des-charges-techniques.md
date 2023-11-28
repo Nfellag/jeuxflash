@@ -1,1 +1,1 @@
-<h1>Bonjours</h1>
+<h1>FlashGame</h1>
