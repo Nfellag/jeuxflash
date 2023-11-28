@@ -1,7 +1,7 @@
 <?php
 
+require_once(__DIR__ . '/../gameflash/include.php');
 
-require_once('include.php');
 
 if(isset($_SESSION['id'])){
   $var = "Bonjour"  .  $_SESSION['prenom'];
@@ -20,7 +20,7 @@ else{
 </head>
 <body>
 <?php
-  require_once('menu.php');
+  require_once(__DIR__ . '/../gameflash/menu.php');
 ?>
 
 <h1><?= $var ?></h1>

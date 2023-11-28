@@ -1,5 +1,5 @@
 <?php
-require_once('include.php');
+require_once(__DIR__ . '/../gameflash/include.php');
 
 $methode = filter_input(INPUT_SERVER, "REQUEST_METHOD");
 $errorMessage = "";
@@ -38,7 +38,7 @@ if($methode == "POST")
                 ":birthdate" => $birthdate
                 )
             );
-            header("Location: connexion.php");
+            header("Location: /../gameflash/connexion.php");
             exit();
 
         }else {
@@ -62,7 +62,7 @@ if($methode == "POST")
 <body>
   <h1>Inscription</h1>
 
-  <form id="inscriptionForm" action="register.php" method="POST">
+  <form id="inscriptionForm" action="/../gameflash/register.php" method="POST">
     <label for="birthdate">Date de naissance :</label>
     <input type="date" id="birthdate" name="birthdate" required>
     <input type="text" name ="nom" id="champ_nom" placeholder="Nom" required>

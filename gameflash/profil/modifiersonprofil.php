@@ -1,8 +1,8 @@
 <?php
-require_once('../include.php');
+require_once(__DIR__ . '/../include.php');
 
 if (!isset($_SESSION['id'])) {
-    header('Location: index.php');
+    header('Location: /../jeuxflash/gameflash/index.php');
     exit;
 }
 
@@ -40,7 +40,7 @@ if (!empty($_POST)) {
         }
 
         if (count($errors) === 0) {
-            header('Location: modifiersonprofil.php');
+            header('Location: /../jeuxflash/gameflash/profil/modifiersonprofil.php');
             exit;
         }
     }
@@ -95,7 +95,7 @@ $mot_de_passe = $req_profil['password'];
 
 <body>
     <?php
-        require_once('../menu.php');
+        require_once(__DIR__ . '/../menu.php');
     ?>
     <div class="row">
         <h1>Modifier mes informations</h1>

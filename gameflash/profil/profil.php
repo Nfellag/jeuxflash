@@ -1,9 +1,9 @@
 <?php
-require_once('../include.php');
+require_once(__DIR__ . '/../include.php');
 
 if(!isset($_SESSION['id'])){
     // Si l'utilisateur n'est pas connecté, redirigez-le vers la page de connexion
-    header('Location: index.php');
+    header('Location: /../gameflash/index.php');
     exit;
 }
 
@@ -24,22 +24,23 @@ $req_profil = $q->fetch();
 </head>
 <body>
     <?php
-    require_once('../menu.php');
+    require_once(__DIR__ . '/../menu.php');
+
     ?>
     <div class="container">
         <div class="informations-bar">
             <h1>Bonjour <?= $req_profil['prenom'] ?></h1>
 
             <div>
-                <a href="profil/modifiersonprofil.php">Modifier mes informations</a>
+                <a href="/../jeuxflash/gameflash/profil/modifiersonprofil.php">Modifier mes informations</a>
             </div>
 
             <div>
-                <a href="profil/upload_profile_picture.php">Modifier ma photo de profil</a>
+                <a href="/../jeuxflash/gameflash/profil/upload_profile_picture.php">Modifier ma photo de profil</a>
             </div>
 
             <div>
-                <a href="profil/mes_scores.php">Mes scores</a>
+                <a href="/../jeuxflash/gameflash/profil/mes_scores.php">Mes scores</a>
             </div>
 
             <div class="profile">

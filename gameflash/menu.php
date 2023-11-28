@@ -9,13 +9,13 @@
             if(!isset($_SESSION['id'])){
     
             ?>
-            <a class="nav-link" href="register.php">Inscription</a><br>
-            <a class="nav-link" href="connexion.php">Connexion</a><br>
+            <a class="nav-link" href="/../jeuxflash/gameflash/register.php">Inscription</a><br>
+            <a class="nav-link" href="/../jeuxflash/gameflash/connexion.php">Connexion</a><br>
             <?php
             }else{
             ?>
-            <a class="nav-link" href="profil/profil.php">Mon Profil</a>
-            <a class="nav-link" href="deconnexion.php">Déconnexion</a>
+            <a class="nav-link" href="/../jeuxflash/gameflash/profil/profil.php">Mon Profil</a>
+            <a class="nav-link" href="/../jeuxflash/gameflash/deconnexion.php">Déconnexion</a>
             <?php
             }
             ?>

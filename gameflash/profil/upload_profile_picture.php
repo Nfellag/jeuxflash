@@ -1,8 +1,8 @@
 <?php
-require_once('../include.php');
+require_once(__DIR__ . '/../include.php');
 
 if (!isset($_SESSION['id'])) {
-    header('Location: index.php');
+    header('Location: /../jeuxflash/gameflash/index.php');
     exit;
 }
 
@@ -15,7 +15,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_FILES['profile_picture'])) 
     $file = $_FILES['profile_picture'];
 
     // Chemin où enregistrer le fichier (par exemple, dans un dossier "uploads")
-    $upload_dir = 'uploads/';
+    $upload_dir = __DIR__ . '/../profil/uploads/';
 
     // Vérifier si le répertoire "uploads" existe, sinon, créez-le
     if (!is_dir($upload_dir)) {
@@ -37,7 +37,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_FILES['profile_picture'])) 
             unlink($old_image_path);
         }
 
-        header('Location: modifiersonprofil.php');
+        header('Location: /../jeuxflash/gameflash/profil/profil.php');
         exit;
     } else {
         echo "Une erreur s'est produite lors du téléchargement de la photo.";
@@ -47,7 +47,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_FILES['profile_picture'])) 
 }
 ?>
 <!-- Modifier sa photo de profil -->
-<form method="post" action="upload_profile_picture.php" enctype="multipart/form-data">
+<form method="post" action="/../jeuxflash/gameflash/profil/upload_profile_picture.php" enctype="multipart/form-data">
     <label for="profile_picture">Choisir une nouvelle photo de profil :</label>
     <input type="file" name="profile_picture" id="profile_picture" accept="image/*">
     <input type="submit" value="Modifier la photo de profil">

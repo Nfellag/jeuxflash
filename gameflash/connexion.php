@@ -1,6 +1,6 @@
 <?php
 // Inclure le fichier de configuration de la base de données
-require_once('include.php');
+require_once(__DIR__ . '/include.php');
 
 // Variables pour stocker les messages d'erreur
 $errorMessage = "";
@@ -19,7 +19,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     if ($user && password_verify($password, $user['password'])) {
         // L'utilisateur est connecté avec succès, stocker l'ID de l'utilisateur dans la session
         $_SESSION['id'] = $user['id']; // Utilisez l'ID de l'utilisateur récupéré de la base de données
-        header("Location: profil/profil.php");
+        header("Location: /../jeuxflash/gameflash/profil/profil.php");
         exit();
     } else {
         // Les informations de connexion sont incorrectes
@@ -48,6 +48,6 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
         <p style="color: red;"><?php echo $errorMessage; ?></p>
     <?php endif; ?>
 
-    <p>Pas encore de compte? <a href="register.php">Inscrivez-vous ici</a></p>
+    <p>Pas encore de compte? <a href="../gameflash/register.php">Inscrivez-vous ici</a></p>
 </body>
 </html>
