@@ -43,7 +43,7 @@
 //     echo "Erreur d'envoie !";
 // }
 
-include "../../backend/bd.php";
+// include "../../backend/bd.php";
 
 if (isset($_POST['send'])) {
     $email = $_POST["email"];

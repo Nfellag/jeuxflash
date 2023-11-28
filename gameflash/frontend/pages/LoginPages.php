@@ -1,6 +1,6 @@
 <?php
 
-require "../../backend/bd.php";
+// require "../../backend/bd.php";
 
 if (isset($_POST['SingUp'])) {
     $email = $_POST['email'];

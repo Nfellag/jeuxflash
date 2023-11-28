@@ -1,0 +1,39 @@
+body{
+    /* background-image: url('../assets/Devinette_actu_Une.jpg'); */
+    background-size: cover;
+    height: 100vh;
+}
+
+#timer{    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: red;
+    
+    width: 10%;
+    margin: 0 auto;
+    border-radius: 30%;
+    font-size: 2em;
+    
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
+}
+
+#gameflash{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* position: relative; */
+    
+    width: 50%;
+    padding: 5em;
+    margin: 0 auto;
+    box-sizing: border-box;
+    border-radius: 0.3em;
+
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.20);
+}
+
+label, span#score,#totalscore {
+    font-size: 2em;
+    font-weight: 600;
+}
